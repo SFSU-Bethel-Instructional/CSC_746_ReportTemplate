@@ -1,0 +1,29 @@
+
+\section{Implementation}
+
+What we (will do | did): Our Solution
+
+\begin{itemize}
+    \item Another way to look at this section is as a paper, within a paper, describing your implementation. That viewpoint makes this the introduction to the subordinate paper, which should describe the overall structure of your implementation and how it is designed to address the problem effectively.
+\item Then, describe the structure of the rest of this section, and what each subsection describes.
+\end{itemize}
+
+How our solution (will | does) work
+\begin{itemize}
+    \item This is the body of the subordinate paper describing your solution. It may be divided into several subsections as required by the nature of your implementation.
+    \item The level of detail about how the solution works is determined by what is appropriate to the type of paper (conference, journal, technical report).
+    \item This section can be fairly short for conference papers, fairly long for journal papers, or quite long in technical reports. It all depends on the purpose of the paper and the target audience.
+    \item Proposals are necessarily a good deal more vague in this section since you have to convince someone you know enough to have a good chance of building a solution, but that you have not already done so.
+\end{itemize}
+
+\begin{lstlisting}[caption={Stencil computation in 2D: performs sum of product of nearby pixels with weights.},label={listing:stencil-core}, name=stencil-core, float=h, style=mystyle,language=C++]
+float smoothPixel(Si, Sj, S, R, weights) {
+    // compute the weight sum of pixels nearby
+    // this code doesn't handle edge conditions
+    // and assumes sum of weights[i,j] = 1.0 
+    float sum = 0.0;
+    for (int j=0; j<R; j++)
+        for (int i=0; i<R; i++)
+           sum += weights[i,j]*S[Si+i,Sj+j]
+    return sum; }
+\end{lstlisting}
