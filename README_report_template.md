@@ -24,3 +24,9 @@ Another option is to manually build the PDF from the command line:
 % pdflatex 00_main
 
 On MacOS and using homebrew, these commands are part of the mactex cask (e.g., brew install mactex). 
+
+## The vgtc LaTeX class file
+
+This LaTeX example makes use of the IEEE vgtc class file, which is part of the IEEE template for journal articles and conference papers. You can read about its many options by perusing README_vgtc.txt.
+
+This project is set up to use 2-column format, which is common for most journal articles and conference papers.
