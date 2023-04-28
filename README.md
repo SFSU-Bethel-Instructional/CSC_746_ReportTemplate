@@ -17,13 +17,15 @@ Writing tip: try to compose paragraphs where you lead off with a main idea, then
 
 One option is to import these files into your own project on Overleaf.com. 
 
-Another option is to manually build the PDF from the command line:
-% pdflatex 00_main
-% bibtex 00_main
-% pdflatex 00_main
-% pdflatex 00_main
+Another option is to manually build the PDF from the command line:  
+% pdflatex 00_main  
+% bibtex 00_main  
+% pdflatex 00_main  
+% pdflatex 00_main  
 
 On MacOS and using homebrew, these commands are part of the mactex cask (e.g., brew install mactex). 
+
+Another option is to create an account at overleaf.com, and then upload this template to overleaf where you can edit the latex source and their system will compile the latex source into a form you can see on the screen and download as a PDF.
 
 ## The vgtc LaTeX class file
 
