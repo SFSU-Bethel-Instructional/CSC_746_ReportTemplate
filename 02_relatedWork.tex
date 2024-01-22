@@ -16,5 +16,30 @@ Other efforts that exist to solve related problems that are relevant, how are th
     \item  Many times no one has solved your exact problem before, but others have solved closely related problems or problems with aspects that are strongly analogous to aspects of your problem.
 \end{itemize}
 
+Sometimes, you need to include some equations in your report. Here are some examples that may be useful.
 
+We can write the \emph{quantum state} encoded by a single qubit as
+\begin{equation}
+    \ket{\psi} \in \{ x : x \in \mathbb{C}^2, \norm{x} = 1 \}
+\end{equation}
+so that it is a complex-valued vector in 2 dimensions with unit norm. The notation $\ket{\psi}$ is known as \emph{Dirac notation} and is the standard notation for writing quantum states. (We will see later in this section how to visualize a 1-qubit quantum state using a Bloch sphere.) The quantum states
+\begin{equation}
+\ket{0} = \begin{pmatrix}
+1 \\
+0
+\end{pmatrix}, 
+\ket{1}= \begin{pmatrix}
+0 \\
+1
+\end{pmatrix}
+\end{equation}
+correspond to the classical bit states of 0 and 1. As the astute reader may have observed, these two states form a small subset of possible quantum states. Nevertheless, we still have a tractable method to describe quantum states for the purposes of computation.
+
+This can be done by observing that the set $\{ \ket{0}, \ket{1} \}$ forms a basis for $\mathbb{C}^2$, known as the \emph{computational basis}, so that every quantum state $\ket{\psi}$ can be written as a linear combination of $\ket{0}$ and $\ket{1}$. More formally, we can write
+\begin{equation}
+\ket{\psi} = \alpha\ket{0} + \beta\ket{1}
+\label{eq:qubit-state}
+\end{equation}
+where $\alpha$ and $\beta$ are \emph{amplitudes}, and
+$\lbrace  \alpha,\beta \rbrace \in \mathbb{C}$. When both $\alpha$ and $\beta$ are non-zero, a quantum state is said to be in a \emph{superposition} of $\ket{0}$ and $\ket{1}$~\cite{Nielsen:Quantum:2010}. In this way, we can make sense of the idea that a single qubit is a combination of a $\ket{0}$ and $\ket{1}$ simultaneously. 
 
